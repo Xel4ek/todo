@@ -6,7 +6,7 @@ $input = $_POST;
 $_POST = [];
 $mix = '?login=0';
 if (isset($_GET['logout'])) {
-  $mes =  ['status'=> 'ok', 'message'=> 'Вы Вышли'];
+  $todo->set_message(['status'=> 'ok', 'message'=> 'Вы Вышли']);
   session_destroy();
   session_start();
 } else if ($input['login'] && $input['password']) {
