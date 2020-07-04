@@ -15,6 +15,5 @@ if (isset($_GET['logout'])) {
     $mix = '';
   }
 }
-$todo->set_message($mes);
 $_SESSION['user'] = serialize($todo);
 header('Location: ./'. $mix);
